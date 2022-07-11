@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // JSON:字符串，可以跨平台网络传输，属性名必须加引号
+        // JS对象不能在网络上传输
+        // 转换：JSON-->JS JSON.parse()
+        //       JS-->JSON JSON.stringify()
+
+        // JSON字符串
+        var jsonStr = '{"name":"张三","age":"23"}'
+        alert(jsonStr)
+        alert(JSON.parse(jsonStr))
+        // JavaScript对象
+        var jsObj = {name:'张三',age:'23'}
+        alert(jsObj)
+        alert(JSON.stringify(jsObj))
+    </script>
+</body>
+</html>
