@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 对于任意一个数组，求出数组元素的和
+        function getSum(array) {
+            var sum = 0
+            for (let index = 0; index < array.length; index++) {
+                sum = sum + array[index];
+                
+            }
+            return sum
+        }
+        var array = [1,2,7]
+        var sum = getSum(array)
+        alert(sum)
+    </script>
+</body>
+</html>

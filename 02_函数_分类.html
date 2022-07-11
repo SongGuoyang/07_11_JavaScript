@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 普通函数（命名函数），有名字
+        function isRunYear(year) {
+            var result = (year%4==0 && year%100!=0) || (year%400==0)
+            return result
+        }
+        var year = prompt('请输入一个年份')
+        // 调用：有参数就给，有返回值就接
+        var res = isRunYear(year)
+        
+        if(res == true){
+            alert(year+'年是闰年')
+        }else{
+            alert(year+'年是平年')
+        }
+
+        // 匿名函数（没有名字的函数）
+        // 用一个变量来接受返回值
+        var pingFang = function (params) {
+            return params*params            
+        }
+    </script>
+</body>
+</html>
