@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var string = 'hdjh28acjhh'
+        // 查询第一个j的索引
+        alert(string.indexOf('j'))
+        // 查询最后一个j的索引
+        alert(string.lastIndexOf('j'))
+        // 截取数字28
+            // 方法一
+        var str1 = []
+        for (let index = 0; index < string.length; index++) {
+            if (string[index] < 9) {
+                str1 = str1 + (string[index])
+            }else{
+                continue
+            }
+            
+        }
+        alert(str1)
+            // 方法二
+        var str2 = string.substr(4,2)
+        alert(str2) 
+        // 将ac换成xv
+        var str3 = string.replace('ac','xv')
+        alert(str3)
+    </script>
+</body>
+</html>
