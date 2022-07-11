@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [1,2,3]
+        // 从末尾删除
+        var num1 = array.pop()
+        alert(num1)
+        alert(array)
+        // 从末尾添加
+        var len = array.push(3)
+        alert(len)
+        alert(array)
+        // 从指定位置添加或删除
+        // splice（索引位置，删除元素的个数（默认一直删除到结尾），要添加的新元素）
+        var num2 = array.splice(0,1,3)
+        alert(array)
+        var num2 = array.splice(0,0,1)
+        alert(array)
+    </script>
+</body>
+</html>
